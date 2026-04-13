@@ -1,0 +1,25 @@
+services:
+  db:
+    image: postgis/postgis:16-3.4-alpine
+    container_name: simple-maps-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB:       mapdb
+      POSTGRES_USER:     mapuser
+      POSTGRES_PASSWORD: mappass
+    ports:
+      - "5432:5432"
+    volumes:
+      # ข้อมูล persistent อยู่ใน Docker volume (ไม่หายเมื่อ container หยุด)
+      - pgdata:/var/lib/postgresql/data
+      # รัน migrations อัตโนมัติตอน container เริ่มครั้งแรก
+      - ./migrations:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mapuser -d mapdb"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  pgdata:
+    name: simple-maps-pgdata

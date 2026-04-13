@@ -21,12 +21,14 @@ export default function LayerImport({ onImported }: { onImported?: () => void })
 
     try {
       const text = await file.text();
-      const json = JSON.parse(text);
+      const geojson = JSON.parse(text);
+      // ชื่อ layer = ชื่อไฟล์ (ตัดนามสกุลออก)
+      const name = file.name.replace(/\.(geo)?json$/i, "");
 
       const res = await fetch("/api/layers/import", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(json),
+        body: JSON.stringify({ name, geojson }),
       });
 
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
