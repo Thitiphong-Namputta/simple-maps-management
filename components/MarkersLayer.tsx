@@ -42,6 +42,7 @@ export default function MarkersLayer({
       }
       onEachFeature={(feature, layer) => {
         const { id, name, category, distance_m } = feature.properties ?? {};
+        layer.bindTooltip(name ?? "", { sticky: true, direction: "top" });
         layer.bindPopup(
           `<b>${name}</b><br>
            <span style="color:#888;font-size:12px">

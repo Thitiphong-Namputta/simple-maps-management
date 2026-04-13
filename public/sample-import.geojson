@@ -1,0 +1,168 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [100.4930, 13.7465] },
+      "properties": {
+        "id": "place-001",
+        "name": "วัดโพธิ์",
+        "category": "temple",
+        "distance_m": 420
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [100.5347, 13.7455] },
+      "properties": {
+        "id": "place-002",
+        "name": "Café Amazon สีลม",
+        "category": "cafe",
+        "distance_m": 880
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [100.5413, 13.7312] },
+      "properties": {
+        "id": "place-003",
+        "name": "สวนลุมพินี",
+        "category": "park",
+        "distance_m": 1250
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [100.5018, 13.7563] },
+      "properties": {
+        "id": "place-004",
+        "name": "ร้านอาหารเจ้อื้อ",
+        "category": "restaurant",
+        "distance_m": 60
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [100.5250, 13.7460] },
+      "properties": {
+        "id": "place-005",
+        "name": "Roast Coffee",
+        "category": "cafe",
+        "distance_m": 540
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [100.5018, 13.7563],
+          [100.5080, 13.7530],
+          [100.5150, 13.7500],
+          [100.5250, 13.7460]
+        ]
+      },
+      "properties": {
+        "name": "เส้นทางเดินเท้า สยาม–ราชประสงค์",
+        "travel_mode": "walking",
+        "distance_meters": 2100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [100.4930, 13.7465],
+          [100.4970, 13.7480],
+          [100.5018, 13.7563]
+        ]
+      },
+      "properties": {
+        "name": "เส้นทางปั่นจักรยาน ท่าเตียน–สนามหลวง",
+        "travel_mode": "cycling",
+        "distance_meters": 1450
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [100.5018, 13.7563],
+          [100.5100, 13.7400],
+          [100.5250, 13.7300],
+          [100.5413, 13.7312]
+        ]
+      },
+      "properties": {
+        "name": "ถนนพระราม 4",
+        "travel_mode": "driving",
+        "distance_meters": 3800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [100.5390, 13.7285],
+          [100.5440, 13.7285],
+          [100.5440, 13.7340],
+          [100.5390, 13.7340],
+          [100.5390, 13.7285]
+        ]]
+      },
+      "properties": {
+        "name": "สวนลุมพินี",
+        "zone_type": "park",
+        "area_sq_meters": 570000,
+        "fill_color": "#1D9E75",
+        "stroke_color": "#0F6E56",
+        "fill_opacity": 0.25
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [100.4900, 13.7440],
+          [100.4960, 13.7440],
+          [100.4960, 13.7490],
+          [100.4900, 13.7490],
+          [100.4900, 13.7440]
+        ]]
+      },
+      "properties": {
+        "name": "เขตพระนคร (ย่านประวัติศาสตร์)",
+        "zone_type": "heritage",
+        "area_sq_meters": 330000,
+        "fill_color": "#BA7517",
+        "stroke_color": "#854F0B",
+        "fill_opacity": 0.20
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [100.4980, 13.7540],
+          [100.5060, 13.7540],
+          [100.5060, 13.7590],
+          [100.4980, 13.7590],
+          [100.4980, 13.7540]
+        ]]
+      },
+      "properties": {
+        "name": "ย่านธุรกิจสีลม",
+        "zone_type": "commercial",
+        "area_sq_meters": 480000,
+        "fill_color": "#7F77DD",
+        "stroke_color": "#534AB7",
+        "fill_opacity": 0.20
+      }
+    }
+  ]
+}
